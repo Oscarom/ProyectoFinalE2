@@ -6,8 +6,14 @@ const getData = async (URL) => {
       .catch((error) => error);
   };
 
-
+  const filterByName= (arr, filtro) => {
+    let filtered = arr.filter( elem => {
+      return elem.name.common.toLowerCase().includes(filtro.toLowerCase())
+    })
+    return filtered
+  }
 
   export default {
-    getData
+    getData,
+    filterByName
   }

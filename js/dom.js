@@ -13,7 +13,6 @@ const cardN = (obj) => {
 
   div.className = "card-m col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12";
 
-  // Insertar los elementos del card
   div.innerHTML = `
 
   <div class="borde">
