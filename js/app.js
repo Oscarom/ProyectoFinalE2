@@ -29,20 +29,23 @@ inputBuscar.addEventListener("keyup", () => {
     filtro = inputBuscar.value;
     const filtered = filtro === "" ? datos : data.filterByName(datos, filtro);
     dom.showCards(filtered);
+    cardModule()
   });
 
 africa.addEventListener("click", () => {
  filtro = "africa";
  const filtered = filtro === "" ? datos : data.filterByRegion(datos, filtro);
  dom.showCards(filtered);
- btnDesp.innerHTML = "Africa" 
+ btnDesp.innerHTML = "Africa"
+ cardModule() 
 });
 
 america.addEventListener("click", () => {
   filtro = "america";
   const filtered = filtro === "" ? datos : data.filterByRegion(datos, filtro);
   dom.showCards(filtered);
-  btnDesp.innerHTML = "America" 
+  btnDesp.innerHTML = "America"
+  cardModule() 
  });
 
  asia.addEventListener("click", () => {
@@ -50,13 +53,15 @@ america.addEventListener("click", () => {
   const filtered = filtro === "" ? datos : data.filterByRegion(datos, filtro);
   dom.showCards(filtered);
   btnDesp.innerHTML = "Asia" 
+  cardModule()
  });
 
  europa.addEventListener("click", () => {
   filtro = "europe";
   const filtered = filtro === "" ? datos : data.filterByRegion(datos, filtro);
   dom.showCards(filtered);
-  btnDesp.innerHTML = "Europa" 
+  btnDesp.innerHTML = "Europa"
+  cardModule() 
  });
 
  oceania.addEventListener("click", () => {
@@ -69,7 +74,8 @@ america.addEventListener("click", () => {
 
 all.addEventListener("click", () => {
   dom.showCards(datos);
-  btnDesp.innerHTML = "All" 
+  btnDesp.innerHTML = "All"
+  cardModule() 
  });
 
 dom.showCards(datos);
