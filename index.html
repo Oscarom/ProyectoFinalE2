@@ -28,37 +28,65 @@
       <div class="row header">
 
         <div class="col-6 head">Where in the word?</div>
-        <div class= "col-6 dark">Dark Mode</div>
+        <div class="col-6 dark">Dark Mode</div>
         <hr>
 
       </div>
 
-      <div class="row filtros">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Lanzar demo de modal
+      </button>
 
-         <div class="col-6"><input id="input-buscar" type="text" placeholder="Search country"></div>
-         
-          <div class="col-6 btn-desplegable1">
-            
-            <div class="dropdown desplegable">
-              <button class="btn btn-light dropdown-toggle btn-desplegable" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                Filter by Region
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item africa" href="#">Africa</a></li>
-                <li><a class="dropdown-item america" href="#">America</a></li>
-                <li><a class="dropdown-item asia" href="#">Asia</a></li>
-                <li><a class="dropdown-item europa" href="#">Europa</a></li>
-                <li><a class="dropdown-item oceania" href="#">Oceania</a></li>
-                <li><a class="dropdown-item all" href="#">ALL</a></li>
-              </ul>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1"aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body modb">
+              ...
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Cerrar</button>
             </div>
 
           </div>
+        </div>
       </div>
 
-      <div class="row cards">
+      <div class="row filtros">
 
+        <div class="col-6"><input id="input-buscar" type="text"
+            placeholder="Search country"></div>
+
+        <div class="col-6 btn-desplegable1">
+
+          <div class="dropdown desplegable">
+            <button class="btn btn-light dropdown-toggle btn-desplegable"
+              type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Filter by Region
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item africa" href="#">Africa</a></li>
+              <li><a class="dropdown-item america" href="#">America</a></li>
+              <li><a class="dropdown-item asia" href="#">Asia</a></li>
+              <li><a class="dropdown-item europa" href="#">Europa</a></li>
+              <li><a class="dropdown-item oceania" href="#">Oceania</a></li>
+              <li><a class="dropdown-item all" href="#">ALL</a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
+
+      <div class="row cards"></div>
+
 
     </div>
 

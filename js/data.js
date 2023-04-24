@@ -13,6 +13,14 @@ const getData = async (URL) => {
     return filtered
   }
 
+  const filterOne= (arr, filtro) => {
+    let filtered = arr.filter( elem => {
+      return elem.name.common.toLowerCase().includes(filtro.toLowerCase())
+    })
+    console.log(filtered)
+    return filtered
+  }
+
   const filterByRegion= (arr, filtro) => {
     let filtered = arr.filter( elem => {
       return elem.region.toLowerCase().includes(filtro.toLowerCase())
@@ -23,5 +31,6 @@ const getData = async (URL) => {
   export default {
     getData,
     filterByName,
-    filterByRegion
+    filterByRegion,
+    filterOne
   }

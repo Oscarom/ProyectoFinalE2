@@ -19,7 +19,6 @@ const datos = await data.getData(URL);
 let filtro = ""
 
 
-
 darkButton.addEventListener("click",
 ()=>{
     html.dataset.bsTheme= html.dataset.bsTheme == "dark"?"ligth":"dark"
@@ -64,7 +63,8 @@ america.addEventListener("click", () => {
  filtro = "oceania";
  const filtered = filtro === "" ? datos : data.filterByRegion(datos, filtro);
  dom.showCards(filtered);
- btnDesp.innerHTML = "Oceania" 
+ btnDesp.innerHTML = "Oceania"
+ cardModule()
 });
 
 all.addEventListener("click", () => {
@@ -73,3 +73,19 @@ all.addEventListener("click", () => {
  });
 
 dom.showCards(datos);
+
+function cardModule() {
+  let cardM = document.querySelectorAll(".card-m");
+
+for (let i = 0; i < cardM.length; i++) {
+cardM[i].addEventListener('click', function() {
+let filtro = cardM[i].id
+console.log(filtro)
+const filtered = filtro === "" ? datos : data.filterOne(datos, filtro);
+dom.showCard(filtered);
+});
+}
+}
+cardModule()
+
+
