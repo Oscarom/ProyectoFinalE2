@@ -23,9 +23,9 @@
   </head>
   <body>
 
-    <div class="container-fluid contenedor">
+    <div class="container contenedor">
 
-      <div class="row header">
+      <div class="row header pt-4">
 
         <div class="col-6 head">Where in the word?</div>
         <div class="col-6 dark">Dark Mode</div>
@@ -33,26 +33,13 @@
 
       </div>
 
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Lanzar demo de modal
-      </button>
-
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1"aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
 
-            <div class="modal-header">
-              <button type="button" class="btn-close" data-bs-dismiss="modal"aria-label="Close"></button>
-            </div>
-
             <div class="modal-body modb">
               ...
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary"data-bs-dismiss="modal">Cerrar</button>
             </div>
 
           </div>
@@ -61,10 +48,10 @@
 
       <div class="row filtros">
 
-        <div class="col-6"><input id="input-buscar" type="text"
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 searchCountry"><input id="input-buscar" type="text"
             placeholder="Search country"></div>
 
-        <div class="col-6 btn-desplegable1">
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 btn-desplegable1">
 
           <div class="dropdown desplegable">
             <button class="btn btn-light dropdown-toggle btn-desplegable"
@@ -92,3 +79,4 @@
 
   </body>
 </html>
+
